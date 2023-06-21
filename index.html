@@ -20,7 +20,7 @@
         font-family: "Hanken";
         src: url(assets\fonts\HankenGrotesk.ttf) format("truetype");
       }
-      * {
+            * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -28,7 +28,8 @@
       body {
         height: 100vh;
         display: grid;
-        grid-template-rows: calc(100vh - 20px) 20px;
+        grid-template-rows: 530px 20px;
+        align-content: space-between;
         justify-items: center;
         font-family: "Hanken", sans-serif;
         background-color: lightblue;
@@ -38,7 +39,7 @@
         border-radius: 1em 1em 0 0;
         width: 250px;
         display: grid;
-        grid-template-rows: 250px 1fr;
+        grid-template-rows: 250px 280px;
         box-shadow: 0 0 40px rgba(48, 59, 90, 0.4);
       }
       .score-card {
@@ -51,6 +52,10 @@
         display: grid;
         grid-template-rows: 20% 1fr 35%;
         border-radius: 1em;
+      }
+      footer {
+        display: flex;
+        align-items: center;
       }
       .score-card > .heading {
         align-self: center;
@@ -107,11 +112,8 @@
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
         display: grid;
-        grid-template-rows: 90% 1fr;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 10px 10px;
+        grid-template-rows: 220px 30px;
+        align-content: space-between;
       }
       table tr:nth-child(odd) {
         background-color: rgba(0, 0, 0, 0.04);
@@ -168,6 +170,7 @@
           border-radius: 1em 1em;
           width: 380px;
           grid-template-columns: 190px 190px;
+          grid-template-rows: 280px;
         }
         .score {
           width: 50%;
